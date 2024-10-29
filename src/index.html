@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="#">
+        <style>
+            .canvas-container {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+
+                height: 1000px;
+
+                grid-template-columns: 1fr 850px 1fr;
+                grid-template-rows: 1fr 650px 3fr;
+            } 
+
+            .canvas-subtext {
+
+                grid-column: 2 / 3;
+                grid-row: 3 / 4;
+
+                text-align: center;
+            }
+
+            .phaser-canvas {
+
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="psyanim-app" class="canvas-container">
+            <div id="phaser-app" class="phaser-canvas"></div>
+        </div>
+    </body>
+</html>
